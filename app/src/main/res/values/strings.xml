@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">4pics 1word</string>
+    <string name="strinng_money">227</string>
+    <string name="string_level">1</string>
+    <string name="white_line">WHITE LINE</string>
+    <string name="line">LINE</string>
+    <string name="w_h_i_t_e">W H I T E</string>
+    <string name="l_i_n_e">L I N E</string>
+    <string name="play">Play</string>
+    <string name="settings">Settings</string>
+    <string name="exit">exit</string>
+    <string name="PHOTOS">4 PHOTOS</string>
+    <string name="word">1 WORD</string>
+</resources>

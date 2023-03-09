@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/jip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.4" />
+
+    <TextView
+        android:id="@+id/white_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/PHOTOS"
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:fontFamily="@font/regular"
+        app:layout_constraintBottom_toBottomOf="@id/jip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/word"
+        android:textSize="50sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/regular"
+        app:layout_constraintStart_toStartOf="@id/white_line"
+        app:layout_constraintEnd_toEndOf="@id/white_line"
+        app:layout_constraintTop_toTopOf="@id/jip"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_play"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/line"
+        app:layout_constraintEnd_toEndOf="@id/line"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        android:text="@string/play"
+        android:textSize="26sp"
+        android:padding="12dp"
+        app:cornerRadius="6dp"
+        android:backgroundTint="#BA60F32C"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_settings"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_play"
+        app:layout_constraintEnd_toEndOf="@id/btn_play"
+        app:layout_constraintTop_toBottomOf="@id/btn_play"
+        android:text="@string/settings"
+        android:textSize="26sp"
+        android:padding="12dp"
+        app:cornerRadius="6dp"
+        android:backgroundTint="#9260F32C"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_exit"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/btn_settings"
+        app:layout_constraintEnd_toEndOf="@id/btn_settings"
+        app:layout_constraintTop_toBottomOf="@id/btn_settings"
+        android:text="@string/exit"
+        android:textSize="26sp"
+        android:padding="12dp"
+        app:cornerRadius="6dp"
+        android:backgroundTint="#BA60F32C"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
